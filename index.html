@@ -16,69 +16,411 @@
 </head>
 
 <body>
+
+
+
     <div class="bg-light">
-        <div class="container">
-            <div class="d-flex justify-content-between mt-2 align-items-center">
-                <div class="d-flex ">
-                    <p class="mt-3 text-secondary">Contact us 24/7
-                    </p>
-                    <button class="bg-light border-0 ">
-                        +1 50 537 53 082</button>
+       
+        <div class="container fixed-top">
+            <div class="navbar navbar-expand-lg flex-nowrap bg-body rounded-3 shadow ps-0 mx-1">
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark rounded-pill z-0 d-none d-block-dark">
                 </div>
-                <div class=" d-none d-sm-none d-md-block">
-                    <p class="text-secondary mt-2">🔥 The Biggest Sale Ever 50% Off</p>
-                </div>
-                <div>
-                    <button class="bg-light border-0 me-2 ">Wishlist</button>
-                    <button class="bg-light border-0 ">Account</button>
+
+                <!-- Mobile offcanvas menu toggler -->
+                <button type="button" class="navbar-toggler ms-3" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <!-- Navbar brand (Logo) -->
+                <a class="navbar-brand position-relative z-1 ms-4 ms-sm-5 ms-lg-4 me-2 me-sm-0 me-lg-3 fw-bold fs-4"
+                    href="">Cartzilla</a>
+
+                <!-- Main navigation  -->
+                <nav class="offcanvas offcanvas-start" id="navbarNav" tabindex="-1" aria-labelledby="navbarNavLabel">
+                    <div class="offcanvas-header py-3">
+                        <h5 class="offcanvas-title" id="navbarNavLabel">
+                            Browse Cartzilla
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body pt-3 pb-4 py-lg-0 mx-lg-auto">
+                        <ul class="navbar-nav position-relative">
+                            <li class="nav-item dropdown me-lg-n1 me-xl-0 nav-underline">
+                                <a class="nav-link dropdown-toggle fs-sm active mx-3" aria-current="page" href="#"
+                                    role="button" data-bs-toggle="dropdown" data-bs-trigger="hover"
+                                    aria-expanded="false">Home</a>
+                                <ul class="dropdown-menu">
+                                    <li class="px-2 mx-n2">
+                                        <a class="dropdown-item d-block mb-0" href="">
+                                            <span class="fw-medium">Electronics Store</span>
+                                            <span class="d-block fs-xs text-body-secondary">Megamenu + Hero
+                                                slider</span>
+                                        </a>
+                                    </li>
+                                    <li class="hover-effect-opacity px-2 mx-n2">
+                                        <a class="dropdown-item d-block mb-0" href="">
+                                            <span class="fw-medium">Fashion Store v.1</span>
+                                            <span class="d-block fs-xs text-body-secondary">Hero promo slider</span>
+                                        </a>
+                                    </li>
+                                    <li class="hover-effect-opacity px-2 mx-n2">
+                                        <a class="dropdown-item d-block mb-0" href="">
+                                            <span class="fw-medium">Fashion Store v.2</span>
+                                            <span class="d-block fs-xs text-body-secondary">Hero banner with
+                                                hotspots</span>
+                                        </a>
+                                    </li>
+                                    <li class="hover-effect-opacity px-2 mx-n2">
+                                        <a class="dropdown-item d-block mb-0" href="">
+                                            <span class="fw-medium">Furniture Store</span>
+                                            <span class="d-block fs-xs text-body-secondary">Fancy product
+                                                carousel</span>
+                                        </a>
+                                    </li>
+                                    <li class="hover-effect-opacity px-2 mx-n2">
+                                        <a class="dropdown-item d-block mb-0" href="">
+                                            <span class="fw-medium">Grocery Store</span>
+                                            <span class="d-block fs-xs text-body-secondary">Hero slider + Category
+                                                cards</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown position-static me-lg-n1 me-xl-0 nav-underline">
+                                <a class="nav-link dropdown-toggle fs-sm mx-3" href="#" role="button"
+                                    data-bs-toggle="dropdown" data-bs-trigger="hover" aria-expanded="false">Shop</a>
+                                <div class="dropdown-menu p-4" style="--cz-dropdown-spacer: 1rem">
+                                    <div class="d-flex flex-column flex-lg-row gap-4">
+                                        <div style="min-width: 190px">
+                                            <div class="h6 mb-2">Electronics Store</div>
+                                            <ul class="nav flex-column gap-2 mt-0">
+                                                <li class="d-flex w-100 pt-1">
+                                                    <a class="nav-link animate-underline animate-target d-inline fw-normal text-body-secondary p-0"
+                                                        href="">Categories Page</a>
+                                                </li>
+                                                <li class="d-flex w-100 pt-1">
+                                                    <a class="nav-link animate-underline animate-target d-inline fw-normal text-body-secondary p-0"
+                                                        href="">Catalog with Side Filters</a>
+                                                </li>
+                                                <li class="d-flex w-100 pt-1">
+                                                    <a class="nav-link animate-underline animate-target d-inline fw-normal text-body-secondary p-0"
+                                                        href="">Product General Info</a>
+                                                </li>
+                                                <li class="d-flex w-100 pt-1">
+                                                    <a class="nav-link animate-underline animate-target d-inline fw-normal text-body-secondary p-0"
+                                                        href="">Product Details</a>
+                                                </li>
+                                                <li class="d-flex w-100 pt-1">
+                                                    <a class="nav-link animate-underline animate-target d-inline fw-normal text-body-secondary p-0"
+                                                        href="">Product Reviews</a>
+                                                </li>
+                                            </ul>
+                                            <div class="h6 pt-4 mb-2">Fashion Store</div>
+                                            <ul class="nav flex-column gap-2 mt-0">
+                                                <li class="d-flex w-100 pt-1">
+                                                    <a class="nav-link animate-underline animate-target d-inline fw-normal text-body-secondary p-0"
+                                                        href="">Catalog with Side Filters</a>
+                                                </li>
+                                                <li class="d-flex w-100 pt-1">
+                                                    <a class="nav-link animate-underline animate-target d-inline fw-normal text-body-secondary p-0"
+                                                        href="">Product Page</a>
+                                                </li>
+                                            </ul>
+                                            <div class="h6 pt-4 mb-2">Furniture Store</div>
+                                            <ul class="nav flex-column gap-2 mt-0">
+                                                <li class="d-flex w-100 pt-1">
+                                                    <a class="nav-link animate-underline animate-target d-inline fw-normal text-body-secondary p-0"
+                                                        href="">Catalog with Top Filters</a>
+                                                </li>
+                                                <li class="d-flex w-100 pt-1">
+                                                    <a class="nav-link animate-underline animate-target d-inline fw-normal text-body-secondary p-0"
+                                                        href="">Product Page</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div style="min-width: 190px">
+                                            <div class="h6 mb-2">Grocery Store</div>
+                                            <ul class="nav flex-column gap-2 mt-0">
+                                                <li class="d-flex w-100 pt-1">
+                                                    <a class="nav-link animate-underline animate-target d-inline fw-normal text-body-secondary p-0"
+                                                        href="">Catalog with Side Filters</a>
+                                                </li>
+                                                <li class="d-flex w-100 pt-1">
+                                                    <a class="nav-link animate-underline animate-target d-inline fw-normal text-body-secondary p-0"
+                                                        href="">Product Page</a>
+                                                </li>
+                                            </ul>
+                                            <div class="h6 pt-4 mb-2">Checkout v.1</div>
+                                            <ul class="nav flex-column gap-2 mt-0">
+                                                <li class="d-flex w-100 pt-1">
+                                                    <a class="nav-link animate-underline animate-target d-inline fw-normal text-body-secondary p-0"
+                                                        href="">Shopping Cart</a>
+                                                </li>
+                                                <li class="d-flex w-100 pt-1">
+                                                    <a class="nav-link animate-underline animate-target d-inline fw-normal text-body-secondary p-0"
+                                                        href="">Delivery Info (Step 1)</a>
+                                                </li>
+                                                <li class="d-flex w-100 pt-1">
+                                                    <a class="nav-link animate-underline animate-target d-inline fw-normal text-body-secondary p-0"
+                                                        href="">Delivery Info (Step 2)</a>
+                                                </li>
+                                                <li class="d-flex w-100 pt-1">
+                                                    <a class="nav-link animate-underline animate-target d-inline fw-normal text-body-secondary p-0"
+                                                        href="">Shipping Address</a>
+                                                </li>
+                                                <li class="d-flex w-100 pt-1">
+                                                    <a class="nav-link animate-underline animate-target d-inline fw-normal text-body-secondary p-0"
+                                                        href="">Payment</a>
+                                                </li>
+                                                <li class="d-flex w-100 pt-1">
+                                                    <a class="nav-link animate-underline animate-target d-inline fw-normal text-body-secondary p-0"
+                                                        href="">Thank You Page</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div style="min-width: 190px">
+                                            <div class="h6 mb-2">Checkout v.2</div>
+                                            <ul class="nav flex-column gap-2 mt-0">
+                                                <li class="d-flex w-100 pt-1">
+                                                    <a class="nav-link animate-underline animate-target d-inline fw-normal text-body-secondary p-0"
+                                                        href="">Shopping Cart</a>
+                                                </li>
+                                                <li class="d-flex w-100 pt-1">
+                                                    <a class="nav-link animate-underline animate-target d-inline fw-normal text-body-secondary p-0"
+                                                        href="">Delivery Info</a>
+                                                </li>
+                                                <li class="d-flex w-100 pt-1">
+                                                    <a class="nav-link animate-underline animate-target d-inline fw-normal text-body-secondary p-0"
+                                                        href="">Pickup from Store</a>
+                                                </li>
+                                                <li class="d-flex w-100 pt-1">
+                                                    <a class="nav-link animate-underline animate-target d-inline fw-normal text-body-secondary p-0"
+                                                        href="">Thank You Page</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown me-lg-n1 me-xl-0 nav-underline">
+                                <a class="nav-link dropdown-toggle fs-sm mx-3" href="#" role="button"
+                                    data-bs-toggle="dropdown" data-bs-trigger="hover" data-bs-auto-close="outside"
+                                    aria-expanded="false">Account</a>
+                                <ul class="dropdown-menu" style="--cz-dropdown-spacer: 1rem">
+                                    <li class="dropend">
+                                        <a class="dropdown-item dropdown-toggle" href="#!" role="button"
+                                            data-bs-toggle="dropdown" data-bs-trigger="hover" aria-expanded="false">Auth
+                                            Pages</a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item" href="./signin/signin.html">Sign In</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="./singup/signup.html">Sign Up</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="">Password Recovery</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="">Orders History</a></li>
+                                    <li><a class="dropdown-item" href="">Wishlist</a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="">Payment Methods</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="">My Reviews</a></li>
+                                    <li><a class="dropdown-item" href="">Personal Info</a></li>
+                                    <li><a class="dropdown-item" href="">Addresses</a></li>
+                                    <li><a class="dropdown-item" href="">Notifications</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown me-lg-n1 me-xl-0 nav-underline mx-3">
+                                <a class="nav-link dropdown-toggle fs-sm" href="#" role="button"
+                                    data-bs-toggle="dropdown" data-bs-trigger="hover" data-bs-auto-close="outside"
+                                    aria-expanded="false">Pages</a>
+                                <ul class="dropdown-menu" style="--cz-dropdown-spacer: 1rem">
+                                    <li class="dropend">
+                                        <a class="dropdown-item dropdown-toggle" href="#!" role="button"
+                                            data-bs-toggle="dropdown" data-bs-trigger="hover"
+                                            aria-expanded="false">About</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="">About v.1</a></li>
+                                            <li><a class="dropdown-item" href="">About v.2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropend">
+                                        <a class="dropdown-item dropdown-toggle" href="#!" role="button"
+                                            data-bs-toggle="dropdown" data-bs-trigger="hover"
+                                            aria-expanded="false">Blog</a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item" href="">Grid View v.1</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="">Grid View v.2</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="">List View</a></li>
+                                            <li>
+                                                <a class="dropdown-item" href="">Single Post v.1</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="">Single Post v.2</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropend">
+                                        <a class="dropdown-item dropdown-toggle" href="#!" role="button"
+                                            data-bs-toggle="dropdown" data-bs-trigger="hover"
+                                            aria-expanded="false">Contact</a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item" href="">Contact v.1</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="">Contact v.2</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="">Contact v.3</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropend">
+                                        <a class="dropdown-item dropdown-toggle" href="#!" role="button"
+                                            data-bs-toggle="dropdown" data-bs-trigger="hover" aria-expanded="false">Help
+                                            Center</a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item" href="">Help Topics v.1</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="">Help Topics v.2</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="">Help Single Article v.1</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="">Help Single Article v.2</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropend">
+                                        <a class="dropdown-item dropdown-toggle" href="#!" role="button"
+                                            data-bs-toggle="dropdown" data-bs-trigger="hover" aria-expanded="false">404
+                                            Error</a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item" href="">404 Electronics</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="">404 Fashion</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="">404 Furniture</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="">404 Grocery</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="">Terms &amp; Conditions</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item me-lg-n2 me-xl-0 nav-underline mx-3">
+                                <a class="nav-link fs-sm" href="">Docs</a>
+                            </li>
+                            <li class="nav-item me-lg-n2 me-xl-0 nav-underline mx-3">
+                                <a class="nav-link fs-sm" href="">Components</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- Button group -->
+                <div class="d-flex gap-sm-1 position-relative z-1">
+                    <!-- Theme switcher (light/dark/auto) -->
+                    <div class="dropdown">
+                        <button type="button"
+                            class="theme-switcher btn btn-icon "
+                            data-bs-toggle="dropdown" data-bs-display="dynamic" aria-expanded="false"
+                            aria-label="Toggle theme (light)">
+                            <span class="theme-icon-active d-flex animate-target mt-1 fs-5">
+                                <iconify-icon icon="ph:sun" noobserver></iconify-icon>
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu start-50 translate-middle-x">
+                            <li>
+                                <button type="button" class="dropdown-item active" data-bs-theme-value="light"
+                                    aria-pressed="true">
+                                    <span class="theme-icon d-flex fs-base me-1">
+                                        <i class="ci-sun"></i>
+                                    </span>
+                                    <i class="fa-solid fa-sun"></i>
+                                    <span class="theme-label">Light</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item" data-bs-theme-value="dark"
+                                    aria-pressed="false">
+                                    <span class="theme-icon d-flex fs-base me-2">
+                                        <i class="ci-moon"></i>
+                                    </span>
+                                    <i class="fa-regular fa-moon"></i>
+                                    <span class="theme-labe">Dark</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item" data-bs-theme-value="auto"
+                                    aria-pressed="false">
+                                    <span class="theme-icon d-flex fs-base me-2">
+                                        <i class="ci-auto"></i>
+                                    </span>
+                                    <i class="fa-solid fa-circle-half-stroke"></i>
+                                    <span class="theme-label">Auto</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Cart button -->
+                    <div class="m-1 position-relative">
+                        <!-- Cart Icon -->
+                        <iconify-icon icon="fluent:cart-20-regular" noobserver class="fs-3" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#cartCanvas"></iconify-icon>
+
+                        <!-- Cart Count Badge -->
+                        <div class="bg-danger text-center rounded-circle position-absolute d-flex align-items-center justify-content-center"
+                            style="top: 0px; right: 0; width: 15px; height: 15px;">
+                            <span id="cart-count" class="text-white" style="font-size: 10px;">0</span>
+                        </div>
+                    </div>
+
+                    <!-- Search -->
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-icon fs-lg btn-secondary rounded-circle animate-scale mx-2"
+                            data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-label="Toggle search bar">
+                            <iconify-icon icon="material-symbols:search" noobserver></iconify-icon>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end p-3">
+                            <form class="position-relative">
+                                <input type="search" class="form-control rounded-pill" placeholder="Search..."
+                                    data-autofocus="dropdown" data-has-listeners="true" />
+
+
+                                </button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg bg-white rounded-5">
-                <div class="container">
-                    <a class="navbar-brand" href="#">Cartzilla</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Shop</a>
-                            </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link">Account</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link">Pages</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link">Docs</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link">Components</a>
-                            </li>
 
-                        </ul>
+        <div class="container  pt-5">
 
-                    </div>
-                    <div>
-                        <iconify-icon icon="ph:sun" noobserver class=" "></iconify-icon>
-                        <iconify-icon icon="fluent:cart-20-regular" noobserver class=" "></iconify-icon>
-                        <iconify-icon icon="ic:twotone-search" noobserver class=" "></iconify-icon>
-                    </div>
-                </div>
-            </nav>
-        </div>
-        <div class="container mt-4">
-
-            <h1 class="text-center fw-bold fs-1">Everything You Need for <br> a Modern Interior</h1>
+            <h1 class="text-center fw-bold fs-1 mt-5 pt-5">Everything You Need for <br> a Modern Interior</h1>
 
             <div class="row">
                 <div class="col-lg-2 d-none d-sm-none d-lg-block  pt-5 mt-5">
@@ -86,18 +428,31 @@
                         <img class="img-fluid" src="./images//home-4.png" alt="">
                     </div>
                 </div>
-                <div class="col-lg-1 col-md-2 col-xs-12 pt-5 mt-5">
+                <div class="col-lg-1 col-md-2  pt-5 mt-5 d-none d-sm-none d-md-block">
                     <div class="mt-5">
                         <iconify-icon icon="iconamoon:arrow-left-2-bold" noobserver
                             class="p-3  bg-white rounded-circle mt-5"></iconify-icon>
                     </div>
                 </div>
+                <div class="d-flex justify-content-center   d-md-none d-sm-block">
+
+                    <iconify-icon icon="iconamoon:arrow-left-2-bold" noobserver
+                        class="p-3  bg-white rounded-circle "></iconify-icon>
+
+
+
+
+                    <iconify-icon icon="iconamoon:arrow-right-2-bold" noobserver
+                        class="p-3  bg-white  rounded-circle mx-2 "></iconify-icon>
+
+                </div>
+
                 <div class="col-lg-6 col-md-8 col-xs-12">
                     <div>
                         <img class="img-fluid" src="./images/home-1.png" alt="">
                     </div>
                 </div>
-                <div class="col-lg-1 col-md-2 col-xs-12 pt-5 mt-5">
+                <div class="col-lg-1 col-md-2 pt-5 mt-5 d-none d-sm-none d-md-block">
                     <div class="mt-5">
                         <iconify-icon icon="iconamoon:arrow-right-2-bold" noobserver
                             class="p-3  bg-white  rounded-circle mt-5 "></iconify-icon>
@@ -117,6 +472,7 @@
             </div>
         </div>
 
+    </div>
     </div>
     <!-- Sub Hero Section -->
 
@@ -162,6 +518,103 @@
         <hr>
     </div>
 
+    <!-- Popular Products Cards -->
+    <div class="container">
+       
+        <div class="row">
+            <div class="card-group">
+                <!-- section-3-card-1 -->
+
+                <div class="card border-0 col-md-3 col-sm-12">
+                    <img src="./images/home-3.png" class="card-img-top rounded-3 w-100 h-50" alt="logo" />
+                    <div class="card-body">
+                        <img class="img-fluid w-25 pe-none" src="/images/card-img-1.png" alt="logo" />
+                        <p class="card-title fw-medium pt-2">
+                            Bed frame lght gray 14x200 cm
+                        </p>
+                        <p class="card-text fw-bold pt-2">$760.00</p>
+                        <div class="d-flex">
+                            <button type="button" class="btn btn-dark text-white rounded-pill w-75 add-to-cart"
+                                data-id="1" data-name="Product 1" data-price="10" data-img="./images/home-3.png">
+                                Add to cart
+                            </button>
+                            <iconify-icon icon="ph:heart-light" style="background-color: #eef1f6"
+                                class="fs-4 border-1 ms-2 p-2 rounded-pill" noobserver></iconify-icon>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- section-3-card-2 -->
+                <div class="card border-0 col-md-3 col-sm-12">
+                    <img src="./images/home-4.png" class="card-img-top rounded-3 w-100 h-50" alt="logo" />
+                    <div class="card-body">
+                        <div class="w-75">
+                            <img class="w-25" src="./images/card-img-2.png" alt="logo" />
+                        </div>
+                        <p class="card-title fw-medium pt-1">
+                            Bed frame liht gray 140x20 cm
+                        </p>
+                        <p class="card-text fw-bold pt-1">$220.00</p>
+                        <div class="d-flex">
+                            <button type="button" class="btn btn-dark text-white rounded-pill w-75 add-to-cart"
+                                data-id="2" data-name="Product 2" data-price="20" data-img="./images/home-4.png">
+                                Add to cart
+                            </button>
+                            <iconify-icon icon="ph:heart-light" style="background-color: #eef1f6"
+                                class="fs-4 border-1 ms-2 p-2 rounded-pill" noobserver></iconify-icon>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- section-3-card-3 -->
+                <div class="card border-0 col-md-3 col-sm-12 d-none d-md-block">
+                    <img src="./images/section-3-img-3.png" class="card-img-top rounded-3 w-75 h-50" alt="logo" />
+                    <div class="card-body">
+                        <img class="w-25 img-fluid" src="./images/card-img-3 (1).png" alt="logo" />
+                        <p class="card-title fw-medium pt-3">
+                            Loftstyle lamp 120x80 cm
+                        </p>
+                        <p class="card-text fw-bold pt-2">
+                            $140.00
+                            <span class="text-decoration-line-through text-black-50">$160.00</span>
+                        </p>
+                        <div class="d-flex">
+                            <button type="button" class="btn btn-dark text-white rounded-pill w-75 add-to-cart"
+                                data-id="3" data-name="Product 3" data-price="30"
+                                data-img="./images/section-3-img-3.png">
+                                Add to cart
+                            </button>
+                            <iconify-icon icon="ph:heart-light" style="background-color: #eef1f6"
+                                class="fs-4 border-1 ms-2 p-2 rounded-pill" noobserver></iconify-icon>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- section-3-card-4 -->
+                <div class="card border-0 col-md-3 col-sm-12 d-none d-lg-block">
+                    <img src="./images/chair.png" class="card-img-top img-fluid rounded-3 w-100 h-50" alt="logo" />
+                    <div class="card-body">
+                        <div class="w-75">
+                            <img class="img-fluid w-25" src="./images/card-img-4.png" alt="logo" />
+                        </div>
+                        <p class="card-title fw-medium pt-3">
+                            Armhr with woden l60x100 cm
+                        </p>
+                        <p class="card-text fw-bold pt-2">$320.50</p>
+                        <div class="d-flex">
+                            <button type="button" class="btn btn-dark text-white rounded-pill w-75 add-to-cart"
+                                data-id="4" data-name="Product 4" data-price="40" data-img="./images/chair.png">
+                                Add to cart
+                            </button>
+                            <iconify-icon icon="ph:heart-light" style="background-color: #eef1f6"
+                                class="fs-4 border-1 ms-2 p-2 rounded-pill" noobserver></iconify-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Design and inspiration -->
     <div class="container">
         <h4 class="fw-bold my-3">Interior design and inspiration</h4>
@@ -189,6 +642,8 @@
 
         </div>
     </div>
+
+    <!-- Shop and play video section -->
 
     <div class="container my-5">
         <div class="row">
@@ -224,13 +679,15 @@
                     </path>
                 </svg>
                 <h5>Delivery to your door</h5>
-                <p class="text-light-emphasis px-3">We will deliver to your door anywhere in the world. If you're not
+                <p class="text-light-emphasis px-3">We will deliver to your door anywhere in the world. If you're
+                    not
                     100% satisfied, let us know within
                     30 days and we'll solve the problem.</p>
             </div>
         </div>
     </div>
 
+    <!-- icons and para -->
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-xs-12 bg-light rounded-start-5 py-2">
@@ -254,7 +711,7 @@
         </div>
     </div>
 
-
+    <!-- Blog and News section -->
     <div class="container my-5">
         <div class="d-flex justify-content-between mt-5">
             <h4 class="fw-bold">Blog and news</h4>
@@ -297,14 +754,17 @@
             </div>
         </div>
     </div>
+
+    <!-- Footer section -->
     <div class="bg-dark text-white py-5 mt-5">
         <div class="container ">
             <footer class="pt-5">
                 <div class="row">
-                    <div class="col-md-2 col-xs-12">
-              
+                    <div class="col-md-2 col-xs-12 mb-4">
+
                         <ul class="nav flex-column text-center">
-                            <li class="nav-item "><a href="#" class="nav-link p-0 text-secondary fw-normal">Bedroom</a></li>
+                            <li class="nav-item "><a href="#" class="nav-link p-0 text-secondary fw-normal">Bedroom</a>
+                            </li>
                             <li class="nav-item "><a href="#" class="nav-link p-0 text-secondary">Living rooms</a>
                             </li>
                             <li class="nav-item "><a href="#" class="nav-link p-0 text-secondary"></a>
@@ -319,30 +779,37 @@
                     <div class="col-md-8 col-xs-12 text-white text-center">
                         <h5>Stay in touch with us</h5>
                         <p>Receive the latest updates about our products & promotions</p>
-                        <input class="bg-dark border-white w-75 py-2 px-4 rounded-pill" type="text" placeholder="You email">
-                        <div class="mt-4"> 
+                        <input class="bg-dark border-white w-75 py-2 px-4 rounded-pill" type="text"
+                            placeholder="You email">
+                        <div class="mt-4">
                             <iconify-icon class="mx-2" icon="mdi:youtube" noobserver class=" "></iconify-icon>
                             <iconify-icon class="mx-2" icon="bxl:facebook" noobserver class=" "></iconify-icon>
                             <iconify-icon class="mx-2" icon="ri:instagram-fill" noobserver class=" "></iconify-icon>
-                            <iconify-icon class="mx-2" icon="mingcute:telegram-fill" noobserver class=" "></iconify-icon>
-                            <iconify-icon class="mx-2" icon="fa6-brands:pinterest-p" noobserver class=" "></iconify-icon>
+                            <iconify-icon class="mx-2" icon="mingcute:telegram-fill" noobserver
+                                class=" "></iconify-icon>
+                            <iconify-icon class="mx-2" icon="fa6-brands:pinterest-p" noobserver
+                                class=" "></iconify-icon>
                         </div>
                         <p class="text-secondary mt-5">© All rights reserved. Made by Createx Studio</p>
                     </div>
 
 
                     <div class="col-md-2 col-xs-12">
-              
+
                         <ul class="nav flex-column text-center">
-                            <li class="nav-item "><a href="#" class="nav-link p-0 text-secondary fw-normal">Shipping options</a></li>
-                            <li class="nav-item "><a href="#" class="nav-link p-0 text-secondary">Shipping options</a>
+                            <li class="nav-item "><a href="#" class="nav-link p-0 text-secondary fw-normal">Shipping
+                                    options</a></li>
+                            <li class="nav-item "><a href="#" class="nav-link p-0 text-secondary">Shipping
+                                    options</a>
                             </li>
                             <li class="nav-item "><a href="#" class="nav-link p-0 text-secondary">Help center</a>
                             </li>
-                            <li class="nav-item "><a href="#" class="nav-link p-0 text-secondary">Contact us</a></li>
-                            <li class="nav-item "><a href="#" class="nav-link p-0 text-secondary">Product returns</a>
+                            <li class="nav-item "><a href="#" class="nav-link p-0 text-secondary">Contact us</a>
+                            </li>
+                            <li class="nav-item "><a href="#" class="nav-link p-0 text-secondary">Product
+                                    returns</a>
                             <li class="nav-item "><a href="#" class="nav-link p-0 text-secondary">Locations</a>
-                           
+
                             </li>
                         </ul>
                     </div>
@@ -353,6 +820,33 @@
             </footer>
         </div>
     </div>
+
+
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartCanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Your Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="text-center">
+                <iconify-icon icon="zondicons:shopping-cart" noobserver class="fs-1 text-secondary"></iconify-icon>
+
+                <p class="text-secondary">Explore our wide range of products and add items to your cart to proceed
+                    with
+                    your purchase.</p>
+            </div>
+            <ul id="cart-items" class="list-group"></ul>
+            <div class="mt-3">
+                <strong>Total Price: $<span id="total-price">0</span></strong>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
 </body>
+
+
 
 </html>
