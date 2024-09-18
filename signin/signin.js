@@ -1,34 +1,16 @@
 
-document
-  .getElementById("user-form")
-  .addEventListener("submit", async function (e) {
-    e.preventDefault();
 
-    let userEmail = document.getElementById("user-email").value;
-    let userPassword = document.getElementById("user-password").value;
+document.getElementById('user-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form from submitting
 
-    try {
-      let UserApi = await fetch("https://fakestoreapi.com/users");
-      let apiJson = await UserApi.json();
+  const email = document.getElementById('user-email').value.trim();
+  const password = document.getElementById('user-password').value.trim();
+  const errorMessage = document.getElementById('error-message');
 
-      console.log(apiJson);
-
-      // Check if any user matches the email and password
-      const setInputValue = apiJson.filter(
-        user => user.email === userEmail && user.password === userPassword
-      );
-
-      console.log(setInputValue);
-
-      // Check if the filtered result is not empty
-      if (setInputValue.length > 0) {
-        window.location.href = "../index.html"; // Redirect if user found
-      } else {
-       
-       alert('Something went wrong. Please check your Form values');
-      } 
+  if (!email || !password) {
+    errorMessage.textContent = "Both email and password are required.";
+  } else {
     
-    } catch (error) {
-      console.error("Error", error);
-    }
-  });
+    window.location.href = '../signup/signup.html'; // Redirect to signup page (simple path)
+  }
+});
