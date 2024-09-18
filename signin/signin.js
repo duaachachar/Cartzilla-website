@@ -1,6 +1,6 @@
 
 document
-  .getElementById("user-details")
+  .getElementById("user-form")
   .addEventListener("submit", async function (e) {
     e.preventDefault();
 
@@ -24,8 +24,10 @@ document
       if (setInputValue.length > 0) {
         window.location.href = "../index.html"; // Redirect if user found
       } else {
-        alert('Something went wrong. Please check your credentials.');
+       
+       alert('Something went wrong. Please check your Form values');
       } 
+    
     } catch (error) {
       console.error("Error", error);
     }

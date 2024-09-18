@@ -21,7 +21,6 @@ document
 
       console.log(setInputValue);
 
-      // Check if the filtered result is not empty
       if (setInputValue.length > 0) {
         window.location.href = "../index.html"; // Redirect if user found
       } else {
